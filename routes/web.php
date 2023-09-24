@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $data['title'] = "Welcome JPSD";
+    return view('index',['data' => $data]);
 });
 
 Route::resource('/job_postings',JobpostingController::class);

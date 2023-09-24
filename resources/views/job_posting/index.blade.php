@@ -11,7 +11,7 @@
     <body>
         <div id="app">
             <example-component></example-component>
-            <h1>This is the home page.</h1>
+            <h1>{{ asset('css/app.css') }}</h1>
         </div>
     </body>
     <script src="{{ asset('js/app.js') }}"></script>
